@@ -14,16 +14,16 @@
             
             <div class="nav-logo">
                 <div class="logo">
-                    <a href="#"> Nandonik Productions </a>
+                    <a href="index.html"> Nandonik Productions </a>
                 </div>
             </div>
 
 
             <div class="nav-info">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Gallery</a>
-                <a href="#">Contact Us</a>
+                <a href="index.html">Home</a>
+                <a id="about-us">About Us</a>
+                <a id="gallery-btn" onclick="openGallery()">Gallery</a>
+                <a id="contact">Contact Us</a>
             </div>
 
         </div>
@@ -44,11 +44,30 @@
                     Thank you for being part of our creative world!
                     </p>
                 </div>
-                <div id="gallery"></div>
+                <div id="gallery" onclick="openGallery()"></div>
+            </div>
+        </div>
+
+
+
+        <div class="gallery-modal hide">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <div class="photo-container">
+                    <button id="prev">◄</button>
+                    <div class="photo"></div>
+                    <button id="next">►</button>
+                </div>
+                <div class="slide-pan"></div>
+
             </div>
         </div>
         
     </main>
+
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
