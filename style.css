@@ -111,7 +111,7 @@ p{
 .photo-container{
     height: 77%;
     width: 97%;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     margin-bottom: 3%;
     display: flex;
     justify-content: space-between;
@@ -161,4 +161,9 @@ button:hover{
 .blur{
     filter: blur(4px);
     -webkit-filter: blur(4px);
+}
+
+.hide{
+    visibility: hidden;
+    opacity: 0.5;
 }

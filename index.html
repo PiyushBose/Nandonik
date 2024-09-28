@@ -47,24 +47,20 @@
                 <div id="gallery" onclick="openGallery()"></div>
             </div>
         </div>
-
-
-
-        <div class="gallery-modal hide">
-            <span class="close">&times;</span>
-            <div class="modal-content">
-                <div class="photo-container">
-                    <button id="prev">◄</button>
-                    <div class="photo"></div>
-                    <button id="next">►</button>
-                </div>
-                <div class="slide-pan"></div>
-
-            </div>
-        </div>
-        
     </main>
+    
+    <div class="gallery-modal hide">
+        <span class="close" onclick="closeGallery()">&times;</span>
+        <div class="modal-content">
+            <div class="photo-container">
+                <button id="prev">◄</button>
+                <div class="photo"></div>
+                <button id="next">►</button>
+            </div>
+            <div class="slide-pan"></div>
 
+        </div>
+    </div>
 
 
     <script src="script.js"></script>
