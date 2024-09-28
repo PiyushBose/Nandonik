@@ -38,11 +38,41 @@ a{
     background-color: #010100;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #home-text{
     color: #fd7f20;
-    font-size: 8rem;
+    font-size: 5rem;
+}
+
+.contents{
+    width: 80%;
+    height: 75%;
+    display: flex;
+}
+
+#intro-text{
+    color: white;
+    width: 50%;
+    text-wrap: wrap;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 8rem 2rem 2rem 2rem;
+    font-size: 1.5rem;
+}
+
+p{
+    padding: 1rem;
+}
+
+#gallery{
+    width: 40%;
+    height: 60%;
+    margin: 10rem 2rem 2rem 2rem;
+    background-image: url("img.jpeg");
+    background-size: cover;
 }
