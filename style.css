@@ -76,6 +76,11 @@ p{
     margin: 7rem 2rem 2rem 2rem;
     background-image: url("img.jpeg");
     background-size: cover;
+    border-radius: 4px;
+}
+
+#gallery:hover{
+    border: 3px solid #fc2e20;
 }
 
 .gallery-modal{
@@ -86,7 +91,8 @@ p{
     left: 17.5vw;
     top: 10vh;
     z-index: 1;
-    /* box-shadow: -10px 10px 20px #7a7a77; */
+    box-shadow: -10px 10px 20px #000;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
