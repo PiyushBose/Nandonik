@@ -137,7 +137,7 @@ p{
     background-position: center;
 }
 
-button{
+#prev, #next{
     width: 10%;
     height: 40%;
     position: relative;
@@ -148,7 +148,7 @@ button{
     font-size: 3rem;
 }
 
-button:hover{
+#prev:hover, #next:hover{
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -182,4 +182,48 @@ button:hover{
 .about-us{
     padding: 10vw 15vw 10vw 15vw;
     font-size: 1.7rem;
+}
+
+.form-container{
+    height: 85vh;
+    background-color: #010100;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form{
+    width: 50%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fd7f20;
+    padding: 20px;
+}
+
+.details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact{
+    height: 30%;
+    border-radius: 4px;
+    border: #fd7f20 solid 2px;
+}
+
+#phone{
+    height: 5vh;
+    width: 140%;
+    position: relative;
+    right: 50px;
+}
+
+.why{
+    width: 50%;
 }

@@ -7,6 +7,12 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -79,10 +85,37 @@
         </p>
     </div>
 
-    
+
+
+    <!-- form -->
+
+<div class="form-container">
+    <div class="form">
+        <div class="details">
+            <input type="text" class="contact" id="name" placeholder="Name">
+            <input type="email" class="contact" id="email" placeholder="E-mail">
+            <span class="contact-submit contact">
+                <input type="tel" id="phone" placeholder='"Likho 98..."'>
+                <button id="submit">Submit</button>
+            </span>
+        </div>
+        <div class="why">
+            <input type="text" placeholder="Why us?">
+        </div>
+    </div>
+</div>
 
 
     <script src="script.js"></script>
 
 </body>
+
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+</script>
+
 </html>
