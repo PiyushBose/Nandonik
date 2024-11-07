@@ -13,7 +13,7 @@ a{
     font-size: 1.5rem;
 }
 
-img{
+#head-logo{
     width: 300px;
     padding-top: 5px;
 }
@@ -110,6 +110,10 @@ p{
     color: #fff;
 }
 
+.close:hover{
+    cursor: pointer;
+}
+
 .modal-content{
     height: 97%;
     width: 97%;
@@ -150,6 +154,7 @@ p{
 
 #prev:hover, #next:hover{
     background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
 }
 
 #prev{
@@ -288,4 +293,50 @@ p{
     text-align: justify;
     resize: none;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: #fc2e20 6px solid;
+    padding: 10px;
+}
+
+#foot-logo{
+    width: 300px;
+}
+
+#foot-text{
+    text-align: center;
+    position: relative;
+    right: 60px;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
+    margin: 10px;
+    margin-top: 40px;
+}
+
+#logo-container{
+    height: 5vh;
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+i{
+    scale: 1.2;
+    margin: 15px;
+}
+
+.copyright{
+    background-color: #fc2e20;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2px;
+    padding-top: 5px;
 }

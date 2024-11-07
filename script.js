@@ -9,3 +9,8 @@ function closeGallery(){
     document.querySelector("header").classList.remove("blur");
     document.querySelector("main").classList.remove("blur");
 }
+
+function copyText(){
+    navigator.clipboard.writeText("productionsnandonik@gmail.com");
+    alert("Copied to clipboard");
+}

@@ -13,6 +13,8 @@
    />
    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
+   <script src="https://kit.fontawesome.com/27ce7b8ac1.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -20,7 +22,7 @@
             
             <div class="nav-logo">
                 <div class="logo">
-                    <a href="index.html"> <img src="/logobutton.png"> </a>
+                    <a href="index.html"> <img id="head-logo" src="/logobutton.png"> </a>
                 </div>
             </div>
 
@@ -53,57 +55,79 @@
                 <div id="gallery" onclick="openGallery()"></div>
             </div>
         </div>
-    </main>
     
-    <div class="gallery-modal hide">
-        <span class="close" onclick="closeGallery()">&times;</span>
-        <div class="modal-content">
-            <div class="photo-container">
-                <button id="prev">◄</button>
-                <div class="photo"></div>
-                <button id="next">►</button>
+    
+        <div class="gallery-modal hide">
+            <span class="close" onclick="closeGallery()">&times;</span>
+            <div class="modal-content">
+                <div class="photo-container">
+                    <button id="prev">◄</button>
+                    <div class="photo"></div>
+                    <button id="next">►</button>
+                </div>
+                <div class="slide-pan"></div>
+
             </div>
-            <div class="slide-pan"></div>
-
         </div>
-    </div>
 
-    <div class="about-us">
-        <iframe width="560" height="315" class="iframe" src="https://www.youtube.com/embed/f5-vNL_xC7I?si=RMN-esIx9lihrLZp?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="about-us">
+            <iframe width="560" height="315" class="iframe" src="https://www.youtube.com/embed/f5-vNL_xC7I?si=RMN-esIx9lihrLZp?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <div class="about">
-            <h2>About Nandonik</h2>
-            <br>
-            <p>
-                Based in the vibrant city of Kolkata, Nandonik is a licensed filmmaking company passionate about storytelling that is both raw and deeply authentic. With a distinct, rustic approach to film, we craft stories that resonate on a global scale, earning us a devoted community of over 1 million followers across Instagram, YouTube, Facebook, and Discord.
-            </p>
+            <div class="about">
+                <h2>About Nandonik</h2>
+                <br>
+                <p>
+                    Based in the vibrant city of Kolkata, Nandonik is a licensed filmmaking company passionate about storytelling that is both raw and deeply authentic. With a distinct, rustic approach to film, we craft stories that resonate on a global scale, earning us a devoted community of over 1 million followers across Instagram, YouTube, Facebook, and Discord.
+                </p>
 
-            <p>
-                Our films break boundaries, speaking to the heart and celebrating life in its most unfiltered form. Honored with numerous national and international awards, Nandonik is recognized for its cinematic excellence and innovative artistry. Every project we undertake is a journey where vision meets grit, and we are proud to share these journeys with you.
-            </p>
+                <p>
+                    Our films break boundaries, speaking to the heart and celebrating life in its most unfiltered form. Honored with numerous national and international awards, Nandonik is recognized for its cinematic excellence and innovative artistry. Every project we undertake is a journey where vision meets grit, and we are proud to share these journeys with you.
+                </p>
+            </div>
         </div>
-    </div>
 
 
 
-    <!-- form -->
+        <!-- form -->
 
-<div class="form-container">
-    <h2 class="form-head">Contact Us</h2>
-    <div class="form">
-        <div class="details">
-            <input type="text" class="contact" id="name" placeholder="Name">
-            <input type="email" class="contact" id="email" placeholder="E-mail">
-            <span class="contact-submit contact">
-                <input type="tel" id="phone" placeholder='"Likho 98..."'>
-                <button id="submit">Submit</button>
-            </span>
+        <div class="form-container">
+            <h2 class="form-head">Contact Us</h2>
+            <div class="form">
+                <div class="details">
+                    <input type="text" class="contact" id="name" placeholder="Name">
+                    <input type="email" class="contact" id="email" placeholder="E-mail">
+                    <span class="contact-submit contact">
+                        <input type="tel" id="phone" placeholder='"Likho 98..."'>
+                        <button id="submit">Submit</button>
+                    </span>
+                </div>
+                <div class="why">
+                    <textarea id="why-us" placeholder="Why us?"></textarea>
+                </div>
+            </div>
         </div>
-        <div class="why">
-            <textarea id="why-us" placeholder="Why us?"></textarea>
+    </main>
+
+    <footer>
+
+        <div class="foot">
+            <img src="logobutton.png" id="foot-logo">
+            <pre id="foot-text">
+                wedding shoots      product shoots      movies      advertisement       content writing
+            </pre>
+            <div class="icon-container">
+                <a href="https://www.youtube.com/@NandonikProductions"><i class="fa-brands fa-youtube" style="color: #fc2e20;"></i></a>
+                <a href="https://www.instagram.com/nandonik_productions_/"><i class="fa-brands fa-instagram" style="color: #fc2e20;"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61556685340926"><i class="fa-brands fa-facebook" style="color: #fc2e20;"></i></a>
+                <a onclick="copyText()"><i class="fa-solid fa-envelope" style="color: #fc2e20;"></i></a>
+            </div>
         </div>
-    </div>
-</div>
+
+        <div class="copyright">
+            &copy;NandonikProductions | All rights reserved
+        </div>
+
+    </footer>
 
 
     <script src="script.js"></script>
