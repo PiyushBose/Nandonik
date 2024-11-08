@@ -4,6 +4,25 @@ let picCount = 0;
 for(let i = 0; i < 9; i ++)
     photoUrls[i] = `./photos/${i}.jpg`;
 
+function disableScroll() {
+    // Get the current page scroll position
+    scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop;
+    scrollLeft =
+        window.pageXOffset ||
+        document.documentElement.scrollLeft,
+
+        // if any scroll is attempted,
+        // set this to the previous value
+        window.onscroll = function () {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+
+function enableScroll() {
+    window.onscroll = function () { };
+}
 
 function openGallery(){
     document.querySelector(".gallery-modal").classList.remove("hide");
@@ -12,12 +31,14 @@ function openGallery(){
     picCount = 0;
     document.querySelector(".photo").style.backgroundImage = `url(${photoUrls[picCount]})`;
     renderSlidePan();
+    disableScroll();
 }
 
 function closeGallery(){
     document.querySelector(".gallery-modal").classList.add("hide");
     document.querySelector("header").classList.remove("blur");
     document.querySelector("main").classList.remove("blur");
+    enableScroll();
 }
 
 function copyText(){
