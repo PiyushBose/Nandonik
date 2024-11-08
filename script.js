@@ -71,3 +71,10 @@ function renderSlidePan(){
     }
 
 }
+
+function clearInfo(){
+    document.querySelector("#name").value = "";
+    document.querySelector("#email").value = "";
+    document.querySelector("#phone").value = "";
+    document.querySelector("#why-us").value = "";
+}
