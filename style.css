@@ -38,6 +38,12 @@ a{
     justify-content: space-evenly;
 }
 
+#about-us:hover,
+#gallery-btn:hover,
+#contact:hover{
+    cursor: pointer;
+}
+
 .home{
     height: 85vh;
     background-color: #010100;
