@@ -79,7 +79,7 @@ p{
     width: 40%;
     height: 60%;
     margin: 7rem 2rem 2rem 2rem;
-    background-image: url("img.jpeg");
+    background-image: url(./photos/0.jpg);
     background-size: cover;
     border-radius: 4px;
 }
@@ -134,8 +134,8 @@ p{
 
 .photo{
     height: 100%;
-    width: 90%;
-    background-image: url(img.jpeg);
+    width: 65%;
+    background-image: url(./photos/0.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -172,6 +172,40 @@ p{
     width: 100%;
     border: 2px solid white;
     margin-bottom: 1.8rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pan-pic{
+    width: 15%;
+    /* background-image: url(./photos/0.jpg); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#i0{
+    background-image: url(./photos/0.jpg);
+}
+
+#i1{
+    background-image: url(./photos/1.jpg);
+}
+
+#i2{
+    background-image: url(./photos/2.jpg);
+}
+
+#i3{
+    background-image: url(./photos/3.jpg);
+}
+
+#i4{
+    background-image: url(./photos/4.jpg);
+}
+
+#i5{
+    background-image: url(./photos/5.jpg);
 }
 
 .blur{
