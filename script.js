@@ -65,7 +65,7 @@ function renderSlidePan(){
 
     for(let i = 0; i < 6; i ++){
 
-        let index = (picCount + i) % 9;
+        let index = (picCount + i) % photoUrls.length;
         
         document.querySelector(`#i${i}`).style.backgroundImage = `url(${photoUrls[index]})`;
     }
